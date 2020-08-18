@@ -9,10 +9,13 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question_string"
-        android:padding="24dp" />
+        android:gravity="center"
+        android:padding="24dp"
+        android:textSize="22sp"
+        tools:text="@string/question_africa"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -34,5 +37,25 @@
             />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/before_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/before_button"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
